@@ -1,16 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = new int [5];
-        for(int i = 0; i < numbers.length; i++){
-            numbers[i] = (i+1)*2;
-            System.out.println(numbers[i]);
-        }
+        String address = "0x120819f5573ac3A530e6172b1581613A09b4b338";
 
-        int sum = 0;
 
-        for(int i = 0; i < numbers.length; i++){
-            sum += numbers[i];
-        }
-        System.out.println(sum);
+        System.out.println(address.substring(0,7) + "..."
+                + address.substring(address.length()-5));
+
     }
 }
